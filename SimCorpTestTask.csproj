@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="text.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>text.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="text.cs">
+      <DependentUpon>text.cshtml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
